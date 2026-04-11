@@ -30,11 +30,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ALARIFE-PROYECT/@alarife/thread.git"
+    "url": "git+https://github.com/ALARIFE-PROYECT/alarife-thread.git"
   },
-  "homepage": "https://github.com/ALARIFE-PROYECT/@alarife/thread#readme",
+  "homepage": "https://github.com/ALARIFE-PROYECT/alarife-thread#readme",
   "bugs": {
-    "url": "https://github.com/ALARIFE-PROYECT/@alarife/thread/issues"
+    "url": "https://github.com/ALARIFE-PROYECT/alarife-thread/issues"
   },
   "scripts": {
     "build": "npx tsc --project tsconfig.build.json",

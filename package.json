@@ -1,0 +1,50 @@
+{
+  "name": "alarife-thread",
+  "description": "Tool for the master builder's environment for the management of multiple processes.",
+  "version": "0.1.0",
+  "author": "Soria Garcia, Jose Eduardo <alarifeproyect@gmail.com>",
+  "license": "Apache-2.0",
+  "private": false,
+  "type": "commonjs",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./lib/index.d.ts"
+      ]
+    }
+  },
+  "keywords": [
+    "alarife"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALARIFE-PROYECT/@alarife/thread.git"
+  },
+  "homepage": "https://github.com/ALARIFE-PROYECT/@alarife/thread#readme",
+  "bugs": {
+    "url": "https://github.com/ALARIFE-PROYECT/@alarife/thread/issues"
+  },
+  "scripts": {
+    "build": "npx tsc --project tsconfig.build.json",
+    "test": "npx tsc --project tsconfig.test.json && node --test \"dist/test/**/*.test.js\""
+  },
+  "dependencies": {
+    "tslib": "~2.8"
+  },
+  "devDependencies": {
+    "@types/node": "~24",
+    "typescript": "~6.0"
+  }
+}

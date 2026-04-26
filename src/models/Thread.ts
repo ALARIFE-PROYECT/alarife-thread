@@ -12,7 +12,7 @@ export interface ThreadOptions extends SpawnOptionsWithoutStdio {
  * * Thread
  * TODO: se debe implementar un protocolo RPC para envio de mensajes.
  */
-export class _Thread extends EventEmitter {
+export class Thread extends EventEmitter {
   private childProcess!: ChildProcess;
 
   private options: ThreadOptions;

@@ -3,7 +3,6 @@ import { resolve } from 'path';
 import EventEmitter from 'events';
 
 import { EXECUTABLE } from '../constants';
-
 import { ThreadMessage } from './ThreadMessage';
 
 export interface ThreadOptions extends SpawnOptionsWithoutStdio {
@@ -17,10 +16,6 @@ export class _Thread extends EventEmitter {
   private childProcess!: ChildProcess;
 
   private options: ThreadOptions;
-
-  // private pending = new Map<string, PendingCall>();
-
-  //   private handlers = new Map<string, (...args: unknown[]) => unknown>();
 
   constructor(path: string, options: ThreadOptions = {}, environment: Record<string, any> = {}) {
     super();

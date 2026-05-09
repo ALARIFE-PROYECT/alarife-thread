@@ -1,9 +1,11 @@
 import { ChildProcess, spawn, SpawnOptionsWithoutStdio } from 'child_process';
 import { resolve } from 'path';
 import EventEmitter from 'events';
+import { existsSync } from 'fs';
 
 import { EXECUTABLE } from '../constants';
 import { ThreadMessage } from './ThreadMessage';
+
 
 export interface ThreadOptions extends SpawnOptionsWithoutStdio {
 }
@@ -19,6 +21,10 @@ export class Thread extends EventEmitter {
 
   constructor(path: string, options: ThreadOptions = {}, environment: Record<string, any> = {}) {
     super();
+
+    if (!path || !existsSync(path)) {
+      throw new Error('Path to the thread script is required');
+    }
 
     this.options = options;
     this.run(path, options, environment);

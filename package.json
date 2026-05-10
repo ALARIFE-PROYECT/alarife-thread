@@ -1,7 +1,7 @@
 {
   "name": "@alarife/thread",
   "description": "Tool for the master builder's environment for the management of multiple processes.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": "Soria Garcia, Jose Eduardo <alarifeproyect@gmail.com>",
   "license": "Apache-2.0",
   "private": false,

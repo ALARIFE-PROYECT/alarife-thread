@@ -56,6 +56,9 @@ export class Thread extends EventEmitter {
   }
 
   private handleMessage(msg: ThreadMessage) {
-
+    /**
+     * TODO: implementar un protocolo RPC para manejar mensajes de eventos, solicitudes y respuestas.
+     */
+    this.emit('message', msg);
   }
 }

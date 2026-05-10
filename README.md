@@ -20,7 +20,7 @@
 ## 🚀 Installation
 
 ```bash
-npm install alarife-thread --save-dev
+npm install @alarife/thread --save-dev
 ```
 
 ## 📦 Basic Usage
